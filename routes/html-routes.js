@@ -1,11 +1,15 @@
-const express = require('express');
+const path = require('path')
+const html = require('express').Router()
 
-const homepageRouter = require('./index');
-const noteRouter = require ('.notes');
+// GET Route for homepage
+html.get('/', (req, res) =>
+  res.sendFile(path.join(__dirname, '/../public/index.html'))
+);
 
-const app = express();
+// GET Route for notes page
+html.get('/notes', (req, res) =>
+  res.sendFile(path.join(__dirname, '/../public/pages/notes.html'))
+);
 
-app.use('./index', homepageRouter);
-app.use('/notes', noteRouter)
 
-module.exports = app;
+module.exports = html;
