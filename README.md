@@ -6,7 +6,7 @@ Create an application called Note Taker that can be used to write and save notic
 
 ## Deployment
 
-**View Live Link**
+**View Live Link** https://note-taker1091.herokuapp.com/
 
 ## Visual
 
