@@ -17,7 +17,7 @@ notes.post('/api/notes', (req, res) => {
     const newNote = {
       title,
       text,
-      note_id: uuid(),
+      id: uuid(),
     };
     // Read JSON and append new note
     readAndAppend(newNote, './db/db.json');
@@ -28,7 +28,7 @@ notes.post('/api/notes', (req, res) => {
 });
 
 // Delete note
-notes.delete('/notes:id', (req, res) => {
+notes.delete('/api/notes/:id', (req, res) => {
   console.log(req.params.id);
   deleteNote(req.params.id, './db/db.json');
   res.json('success')

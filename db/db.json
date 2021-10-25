@@ -1,21 +1,7 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
-        "title": "Faith",
-        "text": "Green\n",
-        "note_id": "ad91"
-    },
-    {
-        "title": "Hello",
-        "text": "BYE",
-        "note_id": "2856"
-    },
-    {
-        "title": "Hello",
-        "text": "Bye",
-        "note_id": "e197"
+        "title": "Test",
+        "text": "This is a test note",
+        "id": "9677"
     }
 ]
